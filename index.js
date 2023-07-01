@@ -1,6 +1,6 @@
 // JavaScript
 function rules(){
-  alert("\u2022 A 2 by 2 square of X or O gives 0.1 points. \n\n\u2022 3 continuous X or O in a row/column/diagonal gets the player 0.25 points.\n\n\u2022 5 continuous X or O in a row/column/diagoanl gets the player 0.5 points.\n\n\u2022 2 rows/columns/diagonals of X or O side by side gets the player 0.5 points.\n\n\u2022 7 in row/column/diagonal gets the player 5 points.\n\n\u2022 Game finishes when the grid gets completely filled. \n\n\u2022 If the player hasn't score till move 12 of game(ie till 12 tiles have been placed) , they get a 0.2 point penalty.\n\n \u2022 Player with most points wins.")
+  alert("\u2022 A 2 by 2 square of X or O gives 0.1 points. \n\n\u2022 3 continuous X or O in a row/column/diagonal gets the player 0.25 points.\n\n\u2022 5 continuous X or O in a row/column/diagoanl gets the player 0.5 points.\n\n\u2022 2 rows/columns/diagonals of X or O side by side gets the player 0.5 points.\n\n\u2022 7 in row/column/diagonal gets the player 5 points.\n\n\u2022 Game finishes when the grid gets completely filled. \n\n\u2022 If the player hasn't scored till move 12 of the game(ie till 12 tiles have been placed) , they get a 0.2 point penalty.\n\n \u2022 Player with most points wins.")
 }
 chance = 0
 xsco = 0
