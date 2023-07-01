@@ -1,6 +1,6 @@
 # 7by7
 A 7 by 7 grid variant of the classic tic-tac-toe <br>
-### To visit website click here :  [7 by 7 Tic Tac Toe](https://www.7by7.netlify.app) 
+### To visit website click here :  [7 by 7 Tic Tac Toe](https://7by7.netlify.app) 
 
 # Rules 
 - A 2 by 2 square of X or O gives 0.1 points.
