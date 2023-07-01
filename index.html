@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style ="background-color:  #121212">
+    <div id = "score">
+    <div id = "osco" style = "font-size: 60px; font-family: cursive; color: aliceblue;"> O : <span id = "oin" style="color:lightblue">0</span> </div>
+    <button id = "rule" onclick = "rules()">Game Rules</button>
+    <div id = "xsco" style = "font-size: 60px;font-family: cursive;color: aliceblue;"> X : <span id = "xin" style="color:lightblue">0</span> </div></div>
+
+</div>
+    <div class="container" id = "main">
+        <div class="grid" id = "gride">
+            <div class="row">
+                <div class="cell" style = "border-top-left-radius: 20px" id = "00"></div>
+                <div class="cell" id = "01"></div>
+                <div class="cell" id = "02"></div>
+                <div class="cell" id = "03"></div>
+                <div class="cell" id = "04"></div>
+                <div class="cell" id = "05"></div>
+                <div class="cell" style="border-top-right-radius: 20px;"id = "06"></div>
+            </div>
+            <div class="row">
+                <div class="cell" id = "10"></div>
+                <div class="cell" id = "11"></div>
+                <div class="cell" id = "12"></div>
+                <div class="cell" id = "13"></div>
+                <div class="cell" id = "14"></div>
+                <div class="cell" id = "15"></div>
+                <div class="cell" id = "16"></div>
+            </div>
+          <div class="row">
+                <div class="cell" id = "20"></div>
+                <div class="cell" id = "21"></div>
+                <div class="cell" id = "22"></div>
+                <div class="cell" id = "23"></div>
+                <div class="cell" id = "24"></div>
+                <div class="cell" id = "25"></div>
+                <div class="cell" id = "26"></div>
+            </div>
+            <div class="row">
+                <div class="cell" id = "30"></div>
+                <div class="cell" id = "31"></div>
+                <div class="cell" id = "32"></div>
+                <div class="cell" id = "33"></div>
+                <div class="cell" id = "34"></div>
+                <div class="cell" id = "35"></div>
+                <div class="cell" id = "36"></div>
+            </div>
+            <div class="row">
+                <div class="cell" id = "40"></div>
+                <div class="cell" id = "41"></div>
+                <div class="cell" id = "42"></div>
+                <div class="cell" id = "43"></div>
+                <div class="cell" id = "44"></div>
+                <div class="cell" id = "45"></div>
+                <div class="cell" id = "46"></div>
+            </div>
+            <div class="row">
+                <div class="cell" id = "50"></div>
+                <div class="cell" id = "51"></div>
+                <div class="cell" id = "52"></div>
+                <div class="cell" id = "53"></div>
+                <div class="cell" id = "54"></div>
+                <div class="cell" id = "55"></div>
+                <div class="cell" id = "56"></div>
+            </div>
+            <div class="row">
+                <div class="cell" style= "border-bottom-left-radius: 20px;"id = "60"></div>
+                <div class="cell" id = "61"></div>
+                <div class="cell" id = "62"></div>
+                <div class="cell" id = "63"></div>
+                <div class="cell" id = "64"></div>
+                <div class="cell" id = "65"></div>
+                <div class="cell" style = "border-bottom-right-radius: 20px;"id = "66"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src = "index.js"></script>
+</html>
