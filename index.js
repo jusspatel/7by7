@@ -372,6 +372,7 @@ gride.addEventListener('click', (e) => {
 
   
   o.textContent='O'
+  o.style.color= 'aliceblue'
 
   arrOfArr[o1[0]][o1[1]] = 'O'
   o.style.pointerEvents = 'none'
@@ -387,6 +388,7 @@ gride.addEventListener('click', (e) => {
     x1=e.target.id
     x=document.getElementById(x1)
         x.textContent='X'
+    o.style.color= 'red'
   
     arrOfArr[x1[0]][x1[1]] = 'X'
 
