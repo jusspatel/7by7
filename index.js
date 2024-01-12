@@ -388,7 +388,7 @@ gride.addEventListener('click', (e) => {
     x1=e.target.id
     x=document.getElementById(x1)
         x.textContent='X'
-    o.style.color= 'red'
+    x.style.color= 'red'
   
     arrOfArr[x1[0]][x1[1]] = 'X'
 
