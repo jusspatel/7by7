@@ -2,16 +2,18 @@
 <html>
 <head>
     <title>Tic Tac Toe</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
+    
+    
 </head>
 
-<body style ="background-color:  #121212">
+<body style ="background-color:  #121212; overflow:hidden">
     <div id = "score">
-    <div id = "osco" style = "font-size: 60px; font-family: cursive; color: aliceblue;"> O : <span id = "oin" style="color:lightblue">0</span> </div>
-    <button id = "rule" onclick = "rules()">Game Rules</button>
-    <div id = "xsco" style = "font-size: 60px;font-family: cursive;color: aliceblue;"> X : <span id = "xin" style="color:lightblue">0</span> </div></div>
-
+    <div id = "osco" style = "font-size: 40px; font-family: cursive; color: aliceblue;"> O : <span id = "oin" style="color:lightblue">0</span> </div>
+    
+    <div id = "xsco" style = "font-size: 40px;font-family: cursive;color: aliceblue;"> X : <span id = "xin" style="color:lightblue">0</span> </div></div>
+    <div class = 'ruleparent'><button id = "rule" onclick = "rules()">Game Rules</button></div>
 </div>
     <div class="container" id = "main">
         <div class="grid" id = "gride">
@@ -82,5 +84,7 @@
         </div>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src = "index.js"></script>
+
 </html>
