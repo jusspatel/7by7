@@ -5,7 +5,10 @@
     height: 100vh;
     
 }
-
+@font-face {
+  font-family: 'eraser';
+  src: url('eraser.ttf')format('truetype');
+}
 
 .grid {
     grid-template-columns: repeat(7, 1fr);
@@ -21,10 +24,10 @@
 
 .cell {
     flex: 1;
+    text-align: center;
     border: 2px lightblue;
-    font-weight : bold;
-    font-family: 'Comic Sans MS',cursive;
-    font-size: 40px;
+    font-family: 'eraser';
+    font-size: 55px;
     height: 60px;
     width:64px;
     display: flex;
@@ -95,12 +98,17 @@
 @media only screen and (max-width: 450px) {
   .cell {
     width: 48px;
-    height:47px
+    height:47px;
+    font-size: 47px;
   }
-    #rule{
+  #rule{
     margin-top: 30px;
   }
-    .container{
-        margin-top: -40px;
-    }
+  #osco{
+    font-size: 45px;
+  }
+  #xsco{
+    font-size: 45px;
+  }
+
 }
