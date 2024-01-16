@@ -100,4 +100,7 @@
     #rule{
     margin-top: 30px;
   }
+    .container{
+        margin-top: -40px;
+    }
 }
