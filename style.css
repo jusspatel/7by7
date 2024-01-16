@@ -97,8 +97,8 @@
 
 @media only screen and (max-width: 450px) {
   .cell {
-    width: 48px;
-    height:47px;
+    width: calc((100vw - 42px)/7);
+    height:calc(((100vw - 42px)/7)*0.9375);
     font-size: 47px;
   }
   #rule{
