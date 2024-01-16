@@ -1,7 +1,39 @@
 // JavaScript
 function rules(){
-  alert("\u2022 A 2 by 2 square of X or O gives 0.1 points. \n\n\u2022 3 continuous X or O in a row/column/diagonal gets the player 0.25 points.\n\n\u2022 5 continuous X or O in a row/column/diagoanl gets the player 0.5 points.\n\n\u2022 2 rows/columns/diagonals of X or O side by side gets the player 0.5 points.\n\n\u2022 7 in row/column/diagonal gets the player 5 points.\n\n\u2022 Game finishes when the grid gets completely filled. \n\n\u2022 If the player hasn't scored till move 12 of the game(ie till 12 tiles have been placed) , they get a 0.2 point penalty.\n\n \u2022 Player with most points wins.")
-}
+  Swal.fire({
+    title:"Rules",
+    
+    width: 650,
+    padding: "1em",
+    
+    background: "#fff",
+    backdrop: `
+      rgba(0,0,123,0.4)
+      url("nyan_cat.gif")
+      left top
+      no-repeat
+    `,
+    html : `<ol style="list-style: none;padding:0;">
+    <li>A 2 by 2 square of X or O gives 0.1 points.</li>
+    <br>
+    <li>3 continuous X or O in a row/column/diagonal gets the player 0.25 points.</li>
+    <br>
+    <li>5 continuous X or O in a row/column/diagonal gets the player 0.5 points.</li>
+    <br>
+    <li>2 rows/columns/diagonals of X or O side by side gets the player 0.5 points.</li>
+    <br>
+    <li>7 in row/column/diagonal gets the player 5 points.</li>
+    <br>
+    <li>Game finishes when the grid gets completely filled.</li>
+    <br>
+    <li>If the player hasn't scored till move 12 of the game (i.e., till 12 tiles have been placed), they get a 0.2 point penalty.</li>
+    <br>
+    <li>Player with most points wins.</li>
+  </ol>
+  `
+    
+  });}
+
 chance = 0
 xsco = 0
 osco = 0
@@ -378,8 +410,8 @@ gride.addEventListener('click', (e) => {
   o.style.pointerEvents = 'none'
   chance ++
   check()
-  document.getElementById('oin').innerText = osco
-  document.getElementById('xin').innerText = xsco
+  document.getElementById('oin').innerText = Math.round(osco*100)/100;
+  document.getElementById('xin').innerText = Math.round(xsco*100)/100;
   }
   else if(chance%2!=0){
     
@@ -388,15 +420,16 @@ gride.addEventListener('click', (e) => {
     x1=e.target.id
     x=document.getElementById(x1)
         x.textContent='X'
-    x.style.color= 'red'
+    x.style.color='red'
+    
   
     arrOfArr[x1[0]][x1[1]] = 'X'
 
     x.style.pointerEvents = 'none'
     chance ++
     check()
-    document.getElementById('oin').innerText = osco
-  document.getElementById('xin').innerText = xsco
+    document.getElementById('oin').innerText = Math.round(osco*100)/100;
+  document.getElementById('xin').innerText = Math.round(xsco*100)/100;
   }
 })
 
